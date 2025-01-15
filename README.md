@@ -1,13 +1,35 @@
 # Loan-Eligibility-Predictor
-This project implements a machine learning-based Loan Eligibility Predictor. It uses a dataset of loan applicants to train various classification models and predict whether a loan application should be approved or denied.
-Key features:
-Comprehensive data preprocessing and analysis
-Implementation of multiple classification algorithms:
-Logistic Regression, K-Nearest Neighbors, Naive Bayes
-Linear and Quadratic Discriminant Analysis
-Decision Tree, Random Forest
-Support Vector Machines (Linear, Gaussian, and Polynomial kernels)
-Model evaluation and comparison using metrics like accuracy, TPR, and TNR
-Web application deployment using Flask
-The best-performing model (SVM with linear kernel) is deployed as a user-friendly web application. Users can input applicant details such as gender, marital status, income, credit history, and more. The application then predicts loan eligibility based on these inputs.
-This project demonstrates proficiency in machine learning, data analysis, and web application development, showcasing an end-to-end data science workflow.
+This project implements a machine learning model to predict loan eligibility based on various applicant features. It includes data preprocessing, model training, evaluation, and a web application for making predictions
+# Features
+- Data preprocessing and feature engineering
+- Implementation of multiple classification algorithms
+   - Logistic Regression
+   - K-Nearest Neighbor (KNN)
+   - Gaussian Naïve Bayes
+   - Linear Discriminant Analysis
+   - Quadratic Discriminant Analysis
+   - Decision Tree
+   - Random Forest
+   - Support Vector Machine (SVM)
+- Model evaluation using various metrics (Accuracy, TPR, TNR)
+- Web application for real-time predictions using Flask
+# Project Structure
+- 'code.ipynb:' Jupyter notebook containing data analysis and model training code
+- 'app.py:' Flask application for the web interface
+- 'index.html:' HTML template for the web application
+- 'loanpred.pkl:' Pickle file containing the trained SVM model
+# Usage
+- To run the web application:
+```bash
+  python app.py
+```
+- Open a web browser and go to http://localhost:5000
+- Enter the applicant's details in the form and click "Predict" to get the loan eligibility prediction
+
+#  Model Performance
+The SVM (linear) model achieved the highest accuracy of 82.08% and was selected for deployment.
+
+
+
+
+
